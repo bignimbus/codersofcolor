@@ -1,0 +1,20 @@
+<div class="page-header">
+  <h1>All Organizations</h1>
+</div>
+  <%= link_to "Create a New Organization", new_organization_path, class: "btn btn-success" %>
+  <% @organizations.each do |organization| %>
+    <div class="organization">
+      <div class="row">
+        <div class ="col-md-1">
+        </div>
+      <div class="col-md-7">
+        <strong><%= organization.name %> </strong>
+        <p><%= organization.description %></p>
+          <span class="admin">
+           | <%= link_to "Edit", edit_organization_path(organization) %>
+            <%= link_to "Delete", organization, method: :delete, data: { confirm: "are you sure you want to delete?"} %>
+          </span>
+      </div>
+   </div>
+  </div>
+<% end %>
