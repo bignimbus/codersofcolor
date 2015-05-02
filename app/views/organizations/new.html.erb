@@ -4,11 +4,14 @@
       <fieldset>
         <legend>Create A New Organization</legend>
           <%= f.input :name %>
+          <%= f.input :description, as: :text %>
           <%= f.input :address %>
           <%= f.input :address_2 %>
           <%= f.input :city %>
           <%= f.input :state %>
           <%= f.input :postal %>
+          <%= f.input :website %>
+          <%= f.input :category %>
           <%= f.submit 'Sign up' %>
       <% end %>
       </fieldset>
