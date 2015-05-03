@@ -1,19 +1,22 @@
 <div class="row">
-  <div class= "well", "col-md-4">
-    <%= simple_form_for @organization do |f|  %>
+  <div class= "col-md-1">
+  </div>
+  <div class="col-md-6">
+    <%= simple_form_for(@organization, html: {class: "well"}) do |f|  %>
       <fieldset>
         <legend>Create A New Organization</legend>
           <%= f.input :name %>
-          <%= f.input :description, as: :text %>
+          <%= f.input :description, as: :text  %>
           <%= f.input :address %>
           <%= f.input :address_2 %>
           <%= f.input :city %>
           <%= f.input :state %>
           <%= f.input :postal %>
           <%= f.input :website %>
-          <%= f.input :category %>
-          <%= f.submit 'Sign up' %>
-      <% end %>
+          <%= f.collection_check_boxes :category, [['Coding'] , ['Tech Incubator'] , ['']], :first, :last %>
+
+          <%= f.submit 'Create Organization' %>
+        <% end %>
       </fieldset>
   </div>
 </div>
