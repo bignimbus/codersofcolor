@@ -28,6 +28,27 @@ class OrganizationsController < ApplicationController
     end
   end
 
+   def update
+    @organization = organization.find(params[:id])
+
+    respond_to do |format|
+     if @organization.update(organization_params)
+        format.html { redirect_to @organization, notice: 'Organization was sucessfully updated.' }
+        format.json { render :show, organization: :ok, location: @organization }
+     else
+        format.html {render :edit }
+        format.json { render json: @organization.erros, organization: :unprocessable_entity }
+     end
+   end
+ end
+
+  def destroy
+    @organization.destroy
+    respond_to do |format|
+      format.html { redirect_to organization_url, notice: 'Organization was successfully destroyed.' }
+      format.json { head :no_content}
+    end
+  end
 
   private
 
