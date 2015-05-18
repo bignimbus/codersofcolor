@@ -5,6 +5,7 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+    @organization = Organization.find(params[:id])
   end
 
   def new
@@ -19,8 +20,8 @@ class OrganizationsController < ApplicationController
 
     respond_to do |format|
       if @organization.save
-        format.html { redirect_to @organization, notice: 'Organization was successfully created'}
-        format.json { render :show, status: :created, location: @organization}
+        format.html { redirect_to @organization, notice: 'Organization was successfully created' }
+        format.json { render :show, status: :created, location: @organization }
       else
         format.html { render :new }
         format.json { render json: @organization.errors, status: :unprocessable_entity}
@@ -51,6 +52,11 @@ class OrganizationsController < ApplicationController
   end
 
   private
+
+  # Use callbacks to share common setup or constraints between actions.
+    def set_organization
+      @organization = Organization.find(params[:id])
+    end
 
   def organization_params
     params.require(:organization).permit(:name, :address, :address_2, :city, :state, :postal, :description, :website, :category)
