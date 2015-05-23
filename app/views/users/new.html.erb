@@ -2,9 +2,9 @@
   <div class= "col-md-1">
   </div>
   <div class="col-md-6">
-    <%= simple_form_for(@profile, html: {class: "well"}) do |f|  %>
+    <%= simple_form_for(@user, html: {class: "well"}) do |f|  %>
       <fieldset>
-        <legend>Create new profile</legend>
+        <legend>Create new user</legend>
           <%= f.input :first_name %>
           <%= f.input :last_name %>
           <%= f.input :email %>
@@ -13,7 +13,7 @@
           <%= f.input :field %>
           <%= f.input :bio %>
 
-          <%= f.submit 'Create profile' %>
+          <%= f.submit 'Create user' %>
         <% end %>
       </fieldset>
   </div>
