@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-devise_for :users
-resources :contacts
-resources :organizations
+resources :profiles
 
-root 'organizations#index'
+root 'profiles#index'
 end
