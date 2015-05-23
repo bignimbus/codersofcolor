@@ -24,7 +24,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
           <ul class="nav navbar-nav">
-            <li><%= link_to "All Profiles", users_path %></li>
+            <li><%= link_to "User Directory", users_path %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                  <% if user_signed_in? %>
+                      <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+                      <li><%= link_to "Log Out", logout_path %></li>
+                  <% else %>
+                      <li><%= link_to "Register",register_path %></li>
+                      <li><%= link_to 'Login', login_path %></li>
+                  <% end %>
           </ul>
           </div>
         </div>
