@@ -1,0 +1,46 @@
+// Place all the styles related to the statuses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+  // .organization {
+  //   border-bottom: solid 1px #CCC;
+  //   padding: 5px 0;
+  // }
+
+  // .organization p {
+  //   margin: 4px 0
+  // }
+
+  // .organization:hover {
+  //   background: #FAFAFA;
+  // }
+
+  // .organization .admin {
+  //   display: none;
+  // }
+
+  // .organization:hover .admin {
+  //   display: inline;
+  // }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic);
+
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  min-height: 3000px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
