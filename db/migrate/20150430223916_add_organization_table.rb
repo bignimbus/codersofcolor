@@ -12,7 +12,6 @@ class AddOrganizationTable < ActiveRecord::Migration
     end
 
      create_table :contacts do |t|
-      t.belongs_to :organizations, index:true
       t.string :name
       t.string :email
       t.string :phone
