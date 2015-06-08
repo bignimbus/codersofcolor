@@ -31,7 +31,7 @@ src: url('fonts/712-icon-fonts.svg#712-icon-fonts') format('svg');
 }
 
 [class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class*="icon-"]:before {
   font-family: "712-icon-fonts" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -323,8 +323,9 @@ src: url('fonts/712-icon-fonts.svg#712-icon-fonts') format('svg');
   content: "~";
 }
 .icon-settings-streamline-2:before {
-  content: "\";
+  content: "\ ";
 }
+
 .icon-shoes-snickers-streamline:before {
   content: "\e000";
 }
