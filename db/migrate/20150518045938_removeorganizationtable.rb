@@ -3,8 +3,4 @@ class Removeorganizationtable < ActiveRecord::Migration
     drop_table :organizations
   end
 
-  def change
-    remove_column :contacts, :organization_id
-  end
-
 end
