@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = current_user
   end
 
   def create
@@ -59,6 +60,6 @@ class UsersController < ApplicationController
     end
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :twitter, :website, :field, :bio)
+    params.require(:user).permit(:password,:password_confirmation,:first_name, :last_name, :email, :twitter, :website, :field, :bio)
   end
 end

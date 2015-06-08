@@ -1,0 +1,42 @@
+<div class="container">
+  <h1 class="page-header">Edit Profile</h1>
+  <div class="row">
+    <!-- left column -->
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+     <%= simple_form_for(resource, :as => resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' },
+        wrapper: :horizontal_form,
+        wrapper_mappings: {
+          check_boxes: :horizontal_radio_and_checkboxes,
+          radio_buttons: :horizontal_radio_and_checkboxes,
+          file: :horizontal_file_input,
+          boolean: :horizontal_boolean
+        }) do |f| %>
+      <div class="text-center">
+        <%= image_tag @user.avatar.url(:medium), :class => "avatar img-circle img-thumbnail" %>
+        <%= f.input :avatar, as: :file %>
+      </div>
+    </div>
+
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+        <%= devise_error_messages! %>
+      <h3>Personal info</h3>
+      <div class="col-lg-8">
+        <%= f.input :first_name %>
+        <%= f.input :last_name %>
+        <%= f.input :field %>
+        <%= f.input :website %>
+        <%= f.input :twitter %>
+        <%= f.input :email %>
+        <%= f.input :password %>
+        <%= f.input :password_confirmation %>
+        <p align="right"><b>You must enter your current password to make changes.</p>
+        <%= f.input :current_password %>
+        <%= f.button :submit , "Save Channges", class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+        <% end %>
+
+</div>
