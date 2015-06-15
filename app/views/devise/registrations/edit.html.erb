@@ -1,4 +1,5 @@
 <div class="container">
+<%= devise_error_messages! %>
   <h1 class="page-header">Edit Profile</h1>
   <div class="row">
     <!-- left column -->
@@ -17,7 +18,6 @@
 
     <!-- edit form column -->
     <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-      <%= devise_error_messages! %>
       <h3>Personal info</h3>
       <div class="col-lg-8">
         <%= f.input :first_name %>
