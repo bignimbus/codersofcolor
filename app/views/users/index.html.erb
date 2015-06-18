@@ -1,28 +1,19 @@
-<%= stylesheet_link_tag "font_styles", "users" %>
-<div class="row">
-   <% @users.each do |user| %>
     <!-- MEMBER -->
-    <div class="col-lg-3 col-sm-3">
-      <div class="team-member">
-        <figure class="profile-pic">
-         <!-- MEMBER PROFILE PIC -->
-        <%= image_tag user.avatar.url(:medium) %>
-        </figure>
-        <div class="member-details">
-          <h5 class="dark-text red-border-bottom"><%= user.name %></h5>
-          <div class="position">
-            <%= user.field %>
-          </div>
-        </div>
-        <div class="social-icons">
-          <ul>
-            <li><a href=""><i class="icon-facebook"></i></a></li>
-            <li><a href=""><i class="icon-twitter-alt"></i></a></li>
-            <li><a href=""><i class="icon-behance"></i></a></li>
-            <li><a href=""><i class="icon-dribbble"></i></a></li>
-          </ul>
-        </div>
+   <div class="row">
+      <% @users.each do |user| %>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3><%= user.name %></h3>
+        <%= user.field %>
+        <p><%= user.bio %></p>
+        <p><%= link_to 'Twitter', user.twitter,  class: "btn btn-primary" %>
+          <%= link_to 'Website', user.website, class: "btn btn-info" %>
+        </p>
       </div>
     </div>
+  </div>
+</div>
   <% end %>
     <!-- / END MEMBER -->
