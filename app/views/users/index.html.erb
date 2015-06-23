@@ -6,9 +6,9 @@
     <div class="thumbnail">
       <div class="caption">
         <h3><%= user.name %></h3>
-        <%= user.field %>
+        <p><%= user.skill %></p>
+        <!-- <%= raw @users.collect { |field| link_to user.field, field }.join(",") %> -->
         <p><%= user.bio %></p>
-        <p><%= link_to 'Twitter', user.twitter,  class: "btn btn-primary" %>
           <%= link_to 'Website', user.website, class: "btn btn-info" %>
         </p>
       </div>
