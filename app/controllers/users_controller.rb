@@ -4,7 +4,25 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def show
+    super
+  end
 
+  def new
+    super
+  end
+
+  def edit
+    super
+  end
+
+  def create
+    super
+  end
+
+  def destroy
+    super
+  end
 
  #  def show
  #    @user = User.find(params[:id])
