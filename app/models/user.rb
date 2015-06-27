@@ -9,11 +9,4 @@ class User < ActiveRecord::Base
   [first_name, last_name].compact.join(' ')
   end
 
-  def skill
-  [field].join
-  end
-
-
-
-
 end
