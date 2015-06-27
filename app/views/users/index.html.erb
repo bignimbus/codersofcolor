@@ -1,7 +1,6 @@
     <!-- MEMBER -->
-   <div class="row">
-      <% @users.each do |user| %>
-
+<div class="row">
+ <% @users.each do |user| %>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
@@ -9,9 +8,9 @@
         <p><%= link_to  "#{user.field}" , class: "btn btn-info"  %></p>
         <p><%= user.bio %></p>
         <p><%= link_to 'Website', user.website, class: "btn btn-info" %> </p>
-      </div>
-    </div>
-  </div>
+       </div>
+     </div>
+   </div>
+ <% end %>
 </div>
-  <% end %>
     <!-- / END MEMBER -->
