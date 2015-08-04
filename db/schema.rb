@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150730015651) do
+ActiveRecord::Schema.define(version: 20150801224128) do
 
   create_table "payola_affiliates", force: :cascade do |t|
     t.string   "code"
@@ -139,6 +139,7 @@ ActiveRecord::Schema.define(version: 20150730015651) do
     t.string   "field"
     t.string   "bio"
     t.integer  "plan_id"
+    t.integer  "role"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
