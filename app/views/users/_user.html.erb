@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <!-- edit form column -->
+    <div class="well col-md-8 col-sm-6 col-xs-12 personal-info">
+      <div class="col-lg-8">
+        <%= devise_error_messages! %>
+
+        <legend>User</legend>
+       <%= simple_form_for(resource, :as => resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' },
+        wrapper: :horizontal_form,
+        wrapper_mappings: {
+          check_boxes: :horizontal_radio_and_checkboxes,
+          radio_buttons: :horizontal_radio_and_checkboxes }) do |f| %>
+        <%= f.input :role, :collection %>
+        <%= f.button :submit , "Change Role", class: "btn btn-primary" %>
+        <% end %>
+        <div class="authform">
+        <h3>Cancel Account</h3>
+        <p>Unhappy? We'll be sad to see you go.</p>
+        <%= link_to "Delete user", registration_path(resource_name),  :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-danger' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
