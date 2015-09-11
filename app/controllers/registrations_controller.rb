@@ -1,13 +1,8 @@
 class RegistrationsController < Devise::RegistrationsController
 
  def create
-  #  invite_code = params[:invite_code]
-  #  if invite_code == 'linkedhearts'
-     super
-  #  else
-    # redirect_to new_user_registration_path, :notice => 'Your invitation code is not valid'
-    # end
-   end
+  super
+ end
 
  def new
   super

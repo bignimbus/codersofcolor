@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
     self.role ||= :basic
   end
 
+  belongs_to :dashboard
+
 # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
