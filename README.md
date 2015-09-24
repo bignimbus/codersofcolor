@@ -33,7 +33,7 @@ You can test a fully working live demo at https://codersofcolor.co
  $ bundle install
  $ rake db:migrate
  $ rails server
- <pre></code>
+ </code></pre>
 
 <p>navigate to http://localhost:8080/</p>
 
