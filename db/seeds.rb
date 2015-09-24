@@ -1,3 +1,6 @@
+user = CreateAdminService.new.call
+puts 'CREATED ADMIN USER: ' << user.email
+
 User.create!([
   {email: "cgarcia123@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Charlie", last_name: "Garcia", website: "http://www.cgracia.com",twitter: "http://twitter.com/thegarcia", field: "Ruby", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},
   {email: "mlane123@gmail.com",password: "password123", password_confirmation: "password123" ,  first_name: "Mike", last_name: "Lane", website: "http://www.michaelane.com", twitter: "http://twitter.com/mlane", field: "Python", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},

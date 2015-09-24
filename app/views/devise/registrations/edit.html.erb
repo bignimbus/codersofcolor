@@ -13,7 +13,7 @@
            file: :horizontal_file_input,
            boolean: :horizontal_boolean
          }) do |f| %>
-        <%= image_tag @user.avatar.url(:medium), :class => "avatar img-circle img-thumbnail" %>
+        <%= image_tag @user.avatar.url(:medium), :class => "img-circle img-thumbnail" %>
         <%= f.input :avatar, as: :file %>
         <%= f.input :first_name %>
         <%= f.input :last_name %>
