@@ -27,15 +27,17 @@ You can test a fully working live demo at https://codersofcolor.co
 
 ## Setup
 
+ <pre><code>
  $ git clone https://github.com/keithgordon/codersofcolor.git
  $ cd codersofcolor
  $ bundle install
  $ rake db:migrate
  $ rails server
+ <pre></code>
 
- navigate to http://localhost:8080/
+<p>navigate to http://localhost:8080/</p>
 
-== Dependencies
+## Dependencies
 
  Rails 4.2.0
  Ruby 2.20
@@ -46,6 +48,6 @@ You can test a fully working live demo at https://codersofcolor.co
  Devise
  Gibbon
 
-== Team
+## Team
 
 * Keith Gordon mailto:keith@keiththecomputerguy.com
