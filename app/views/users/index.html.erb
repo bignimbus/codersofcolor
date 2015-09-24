@@ -1,16 +1,24 @@
+<%= stylesheet_link_tag "font_styles", "users" %>
     <!-- MEMBER -->
 <div class="row">
- <% @users.each do |user| %>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <div class="caption">
-        <h3><%= user.name %></h3>
-        <p><%= link_to  "#{user.field}" , class: "btn btn-info"  %></p>
-        <p><%= user.bio %></p>
-        <p><%= link_to 'Website', user.website, class: "btn btn-info" %> </p>
-       </div>
-     </div>
-   </div>
- <% end %>
+<% @users.each do |user| %>
+ <div class="col-sm-6 col-md-3">
+   <div class="team-member">
+     <figure class="profile-pic">
+      <!-- MEMBER PROFILE PIC -->
+     <%= image_tag user.avatar.url(:medium) , :class => "img-circle img-thumbnail" %>
+     </figure>
+     <div class="caption">
+       <h3><%= user.name %></h3>
+       <p><%= link_to  "#{user.field}" , class: "btn btn-info"  %></p>
+       <p><%= user.bio %></p>
+       <p><%= link_to 'Website', user.website, class: "btn btn-success btn-xs" %>
+         <%= link_to 'Twitter', user.website, class: "btn btn-info btn-xs" %>
+      </p>
+
+      </div>
+    </div>
+  </div>
+<% end %>
 </div>
-    <!-- / END MEMBER -->
+   <!-- / END MEMBER -->

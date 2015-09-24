@@ -1,0 +1,166 @@
+/* =======================================================================
+Zerif -One Page Respossive HTML5 Template
+======================================================================= */
+
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+html {
+
+    font-size: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 14px;
+  color: #808080;
+  font-weight: normal;
+  overflow-x: hidden !important;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+/* Other fixes*/
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+i {
+  vertical-align: middle;
+}
+ul, ol {
+padding-left: 0 !important;
+}
+li {
+    list-style: none;
+}
+/* Selection colours (easy to forget) */
+::-moz-selection {
+  background: #FC6D6D;
+  color: #FFF;
+}
+::selection {
+  background: #FC6D6D;
+  color: #FFF;
+}
+::-moz-selection {
+  background: #FC6D6D;
+  color: #FFF;
+}
+
+a {
+  color: #e96656;
+  -webkit-transition: all 700ms;
+          transition: all 700ms;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: #cb4332;
+}
+p {
+    margin: 0;
+}
+.full-width {
+  width: 100%;
+  margin: auto;
+}
+
+/*---------------------------------------
+ **   TYPOGRAPHY                     -----
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1,h2 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 45px !important;
+  line-height: 55px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 17px;
+}
+h6 {
+  font-size: 16px;
+}
+
+
+
+
+
+/*---------------------------------------
+ **   SECTION:  OUR TEAM              -----
+-----------------------------------------*/
+
+
+.team-member {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.team-member .profile-pic {
+  border-radius: 50%;
+  width: 174px;
+  height: 174px;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.team-member .profile-pic img {
+  width: 100%;
+  height: 100%;
+}
+.team-member h5 {
+  text-transform: uppercase;
+  color: #404040;
+  font-weight: 700;
+  position: relative;
+}
+.team-member .position {
+  font-size: 13px;
+  margin-top: 15px;
+}

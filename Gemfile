@@ -13,6 +13,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'gibbon'
+gem "paperclip", "~> 4.2"
+gem 'rmagick'
+gem 'attachment_on_the_fly'
 
 group :development, :test do
   gem 'byebug'

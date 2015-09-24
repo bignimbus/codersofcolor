@@ -1,28 +1,29 @@
 <div class="container">
+  <h1>Edit Profile</h1>
   <div class="row">
-
-
     <!-- edit form column -->
-
-    <div class="well col-md-8 col-sm-6 col-xs-12 personal-info">
-      <div class="col-lg-8">
+    <div class="well col-md-6 col-sm-6 col-xs-12 personal-info">
         <%= devise_error_messages! %>
-
-        <legend>Personal info</legend>
-       <%= simple_form_for(resource, :as => resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' },
-        wrapper: :horizontal_form,
-        wrapper_mappings: {
-          check_boxes: :horizontal_radio_and_checkboxes,
-          radio_buttons: :horizontal_radio_and_checkboxes }) do |f| %>
+      <legend>Profile Information</legend>
+      <%= simple_form_for(resource, :as => resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' },
+         wrapper: :horizontal_form,
+         wrapper_mappings: {
+           check_boxes: :horizontal_radio_and_checkboxes,
+           radio_buttons: :horizontal_radio_and_checkboxes,
+           file: :horizontal_file_input,
+           boolean: :horizontal_boolean
+         }) do |f| %>
+        <%= image_tag @user.avatar.url(:medium), :class => "avatar img-circle img-thumbnail" %>
+        <%= f.input :avatar, as: :file %>
         <%= f.input :first_name %>
         <%= f.input :last_name %>
         <%= f.input :bio, placeholder: 'Tell us about yourself!' ,as: :text %>
-        <%= f.input :website, placeholder: 'http://www.example.com' %>
-        <%= f.input :field, as: :radio_buttons, collection: ["HTML/CSS","Ruby on Rails","Javscript","JQuery"]%>
+        <%= f.input :field, as: :radio_buttons, collection: ["HTML/CSS","Ruby","Javscript","PHP","C++","C#","Python"] %>
+        <%= f.input :website, placeholder: 'http://www.example.com'  %>
         <%= f.input :email %>
         <%= f.input :password %>
         <%= f.input :password_confirmation %>
-        <p align="right">You must enter your current password to make changes.</p>
+        <p align="right"><b>You must enter your current password to make changes.</b></p>
         <%= f.input :current_password %>
         <%= f.button :submit , "Save Changes", class: "btn btn-primary" %>
         <% end %>
@@ -30,7 +31,6 @@
         <h3>Cancel Account</h3>
         <p>Unhappy? We'll be sad to see you go.</p>
         <%= link_to "Cancel my account", registration_path(resource_name),  :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-danger' %>
-        </div>
       </div>
     </div>
   </div>

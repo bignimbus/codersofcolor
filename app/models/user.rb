@@ -2,6 +2,10 @@ class User < ActiveRecord::Base
   enum role: [:basic,:plus,:premium,:admin]
   after_initialize :set_default_role, :if => :new_record?
 
+  has_attached_file :avatar, :styles => { :medium => "200x200>", :thumb => "100x100>" }, :default_url => "/images/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage/
+  validates_attachment_file_name :avatar, :matches => [/png\Z/, /jpe?g\Z/]
+
   def set_default_role
     self.role ||= :basic
   end
