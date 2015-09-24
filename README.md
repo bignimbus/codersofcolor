@@ -4,16 +4,13 @@ Ruby on Rails Member Directory Site
 
 This is a Member Directory powered by Ruby on Rails.
 
-![User Profile](/public/images/user_profile.png)
-![Edit Profile](/public/images/edit_profile.png)
 ![Sign Up Page](/public/images/sign_up.png)
 ![Sign In Page](/public/images/sign_in.png)
-
+![User Profile](/public/images/user_profile.png)
+![Edit Profile](/public/images/edit_profile.png)
 
 ## Demo
 You can test a fully working live demo at https://codersofcolor.co
-
-
 
 ## Features
 - Sleek Design
@@ -21,8 +18,6 @@ You can test a fully working live demo at https://codersofcolor.co
 - User List
 - Ability to remove users (for admins)
 - Other awesome features yet to be implemented
-
-
 
 ## Setup
 
