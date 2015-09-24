@@ -1,9 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-user = CreateAdminService.new.call
-puts 'CREATED ADMIN USER: ' << user.email
+User.create!([
+  {email: "keithg@gmail.com", password: "password123", password_confirmation: "password123" ,  first_name: "Keith", last_name: "Gordon", website: "http://www.keiththecomputerguy.com", field: "Javscript", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 3},
+  {email: "cgarcia@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Charlie", last_name: "Garcia", website: "http://www.cgracia.com", field: "Ruby", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},
+  {email: "mlane@gmail.com",password: "password123", password_confirmation: "password123" ,  first_name: "Mike", last_name: "Lane", website: "http://www.michaelane.com", field: "Python", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},
+  {email: "acheekz@gmail.com", password: "password123", password_confirmation: "password123" ,  first_name: "AL", last_name: "Cheekz", website: "http://www.alcheekz.com", field: "C++", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},
+  {email: "cbennet@gmail.com",password: "password123", password_confirmation: "password123" , first_name: "Chance", last_name: "Bennet", website: "http://www.chanceraps.com", field: "PHP", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0},
+  {email: "kwest@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Kanye", last_name: "West", website: "http://www.kanye.com", field: "HTML/CSS", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0}
+  {email: "bobama@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Barack", last_name: "Obama", website: "http://www.barackobama.com", field: "Javascript", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0}
+  {email: "jayz@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Jay", last_name: "Z", website: "http://www.jayz.com", field: "C++", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0}
+  {email: "mlking@gmail.com", password: "password123", password_confirmation: "password123" , first_name: "Martin Lurther", last_name: "King", website: "http://www.martinlurtherking.com", field: "Ruby", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor laoreet sem vel dapibus. Pellentesque pretium libero dictum ipsum tincidunt.", role: 0}
+])
