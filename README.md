@@ -1,11 +1,13 @@
 Ruby on Rails Member Directory Site
 ============
-[![GitHub Stars](https://img.shields.io/github/stars/keithgordon/codersofcolor.svg)](https://github.com/keithgordon/codersofcolor/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/keithgordon/codersofcolor.svg)](https://github.com/keithgordon/codersofcolor/issues) [![Current Version](https://img.shields.io/badge/version-1.0.7-green.svg)](https://github.com/keithgordon/colorsofcolor) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://codersofcolor.co)
+ [![Current Version](https://img.shields.io/badge/version-1.0.7-green.svg)](https://github.com/keithgordon/colorsofcolor) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://codersofcolor.co)
 
 This is a Member Directory powered by Ruby on Rails.
 
 ![User Profile](/public/images/user_profile.png)
-
+![Edit Profile](/public/images/edit_profile.png)
+![Sign Up Page](/public/images/sign_up.png)
+![Sign In Page](/public/images/sign_in.png)
 
 
 ## Demo
@@ -36,14 +38,14 @@ You can test a fully working live demo at https://codersofcolor.co
 
 ## Dependencies
 
- 1. Rails 4.2.0
- 2. Ruby 2.20
- 3. Heroku
- 4. Simple Form
- 5. Twitter Bootstrap
- 6. PaperClip
- 7. Devise
- 8. Gibbon
+ * Rails 4.2.0
+ * Ruby 2.20
+ * Heroku
+ * Simple Form
+ * Twitter Bootstrap
+ * PaperClip
+ * Devise
+ * Gibbon
 
 ## Team
 
