@@ -4,10 +4,8 @@ Ruby on Rails Member Directory Site
 
 This is a Member Directory powered by Ruby on Rails.
 
-![User Profile](http://imgur.com/C1q0FMp)
-![Edit Profile](http://imgur.com/LHRBxW9)
-![Sign Up Page](http://imgur.com/2Xoaftv)
-![Sign In Page](http://imgur.com/IMNJ7a3)
+![User Profile](/public/images/user_profile.png)
+
 
 
 ## Demo
