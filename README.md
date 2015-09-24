@@ -4,10 +4,10 @@ Ruby on Rails Member Directory Site
 
 This is a Member Directory powered by Ruby on Rails.
 
-![User Profile](https://www.dropbox.com/s/2zri60ukw7sw25r/user_profile.png?dl=0)
-![Profile Edit](https://www.dropbox.com/s/jxk8x4irua7h48g/edit_profle.png?dl=0)
-![Sign Up Page](https://www.dropbox.com/s/ocxp24pzv4kmc38/sign_up.png?dl=0)
-![Sign In Page](https://www.dropbox.com/s/99jd488up5q0jt4/sign_in.png?dl=0)
+![User Profile](http://imgur.com/C1q0FMp)
+![Edit Profile](http://imgur.com/LHRBxW9)
+![Sign Up Page](http://imgur.com/2Xoaftv)
+![Sign In Page](http://imgur.com/IMNJ7a3)
 
 
 ## Demo
