@@ -13,7 +13,7 @@ This is a Member Directory powered by Ruby on Rails.
 ## Demo
 You can test a fully working live demo at https://codersofcolor.co
 
----
+
 
 ## Features
 - Sleek Design
@@ -23,7 +23,6 @@ You can test a fully working live demo at https://codersofcolor.co
 - Other awesome features yet to be implemented
 
 
----
 
 ## Setup
 
@@ -39,15 +38,15 @@ You can test a fully working live demo at https://codersofcolor.co
 
 ## Dependencies
 
- Rails 4.2.0
- Ruby 2.20
- Heroku
- Simple Form
- Twitter Bootstrap
- PaperClip
- Devise
- Gibbon
+ 1. Rails 4.2.0
+ 2. Ruby 2.20
+ 3. Heroku
+ 4. Simple Form
+ 5. Twitter Bootstrap
+ 6. PaperClip
+ 7. Devise
+ 8. Gibbon
 
 ## Team
 
-* Keith Gordon mailto:keith@keiththecomputerguy.com
+* <p>Keith Gordon<a href="mailto:keith@keiththecomputerguy.com"></a></p>
