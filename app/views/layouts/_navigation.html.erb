@@ -1,20 +1,6 @@
-<%# navigation styled for Bootstrap 3.0 %>
-<nav class="navbar navbar-default navbar-static-top">
-      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar">
-       <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to "Coders of Color", root_path ,  class: "navbar-brand" %>
-    </div>
-    <div class="collapse navbar-collapse" id="navigationbar">
-      <ul class="nav navbar-nav navbar-right">
-        <%= render 'layouts/navigation_links' %>
-      </ul>
-    </div>
-  </div>
+<%# navigation styled for Bootstrap 4.0 %>
+<nav class="navbar navbar-light bg-faded">
+  <%= link_to "Coders of Color", root_path ,  class: "navbar-brand" %>
+  <ul class="nav navbar-nav pull-right">
+    <%= render 'layouts/navigation_links' %>
 </nav>

@@ -1,14 +1,14 @@
 <%# add navigation links to this file %>
 <% if user_signed_in? %>
   <% if current_user.admin? %>
-    <li><%= link_to 'Dashboard', dashboard_index_path %></li>
+    <li class="nav-item"><%= link_to 'Dashboard', dashboard_index_path %></li>
   <% end %>
 <% end %>
 <% if user_signed_in? %>
-  <li><%= link_to 'Members List', users_path %></li>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
+  <li class="nav-item"><%= link_to 'Members List', users_path %></li>
+  <li class="nav-item"><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li class="nav-item"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
-  <li><%= link_to 'Sign in', new_user_session_path %></li>
-  <li><%= link_to 'Sign up', new_user_registration_path %></li>
+  <li class="nav-item"><%= link_to 'Sign in', new_user_session_path %></li>
+  <li class="nav-item"><%= link_to 'Sign up', new_user_registration_path %></li>
 <% end %>
