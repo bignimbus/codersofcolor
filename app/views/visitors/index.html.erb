@@ -1,14 +1,16 @@
 <%= stylesheet_link_tag "visitor" %>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Colored Coders</h1>
-        <p class="lead">A community of career and entrepreneurial African Americans who support each other through conversation, online and event-based networking.
-        </p>
-        <p><%= link_to 'Sign up Today', new_user_registration_path , class: "btn btn-lg btn-info" %></p>
-      </div>
+<div id="headerwrap" name="home">
+			<header class="clearfix">
+	  		 		<h1><span class="icon icon-shield"></span></h1>
+	  		 		<p>A community of career and entrepreneurial African Americans who support each other through conversation, online and event-based networking.</p>
+          </p>
+      <p><%= link_to 'Sign up Today', new_user_registration_path , class: "btn btn-lg btn-success" %></p>
+	  		</header>
+	    </div>
 
-      <h3>Press</h3>
+      <div class="container">
+      <h3 >Press</h3>
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><%= link_to "Intel Invests $300 Million to Improve Its Workplace Diversity" , "http://www.wired.com/2015/01/intel-diversity/" %></h4>
@@ -31,5 +33,4 @@
       <footer class="footer">
         <p>&copy; Coders of Color 2015</p>
       </footer>
-
-    </div> <!-- /container -->
+    </div>
