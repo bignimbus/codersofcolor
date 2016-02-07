@@ -1,34 +1,37 @@
-<%= stylesheet_link_tag "visitor" %>
+<%= stylesheet_link_tag "jumbotron" %>
 
-<div id="headerwrap" name="home">
-			<header class="clearfix">
-	  		 		<h1><span class="icon icon-shield"></span></h1>
-	  		 		<p>A community of career and entrepreneurial African Americans who support each other through conversation, online and event-based networking.</p>
-          </p>
-      <%= link_to 'Sign up Today', new_user_registration_path , class: "btn btn-lg btn-success" %>
-	  		</header>
-	    </div>
+<div class="container">
 
-      <div class="container">
-      <h3 >Press</h3>
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><%= link_to "Intel Invests $300 Million to Improve Its Workplace Diversity" , "http://www.wired.com/2015/01/intel-diversity/" %></h4>
-          <p>January 07, 2015</p>
+	<div class="jumbotron">
+		<h1>Coders of Color</h1>
+		<p class="lead">A community of career and entrepreneurial African Americans who support each other through conversation, online and event-based networking.</p>
+		<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+	</div>
 
-          <h4><%= link_to "Jesse Jackson Is Taking on Silicon Valley's Epic Diversity Problem", "http://www.motherjones.com/politics/2015/05/tech-industry-diversity-jesse-jackson"  %></h4>
-          <p>June 30, 2015</p>
+	<div class="row marketing">
+		<div class="col-lg-6">
+			<h4><%= link_to "Intel Invests $300 Million to Improve Its Workplace Diversity" , "http://www.wired.com/2015/01/intel-diversity/" %></h4>
+			<p>January 07, 2015</p>
 
-        </div>
+			<h4><%= link_to "Jesse Jackson Is Taking on Silicon Valley's Epic Diversity Problem", "http://www.motherjones.com/politics/2015/05/tech-industry-diversity-jesse-jackson"  %></h4>
+			<p>June 30, 2015</p>
+		</div>
 
-        <div class="col-lg-6">
-          <h4><%= link_to "Who's hiring techies? Not just startups", "http://www.chicagobusiness.com/article/20150606/ISSUE01/306069990/whos-hiring-techies-not-just-startups" %></h4>
-          <p>June 06, 2015</p>
+		<div class="col-lg-6">
+			<h4><%= link_to "Who's hiring techies? Not just startups", "http://www.chicagobusiness.com/article/20150606/ISSUE01/306069990/whos-hiring-techies-not-just-startups" %></h4>
+			<p>June 06, 2015</p>
 
-          <h4><%= link_to "Investors from Revolution & Silicon Valley Bank Share Why They're Bullish on Chicago", "http://chicagoinno.streetwise.co/2015/07/01/investors-from-revolution-silicon-valley-bank-share-why-theyre-bullish-on-chicago/" %></h4>
-          <p>July 01, 2015</p>
-        </div>
-      </div>
+      <h4><%= link_to "Investors from Revolution & Silicon Valley Bank Share Why They're Bullish on Chicago", "http://chicagoinno.streetwise.co/2015/07/01/investors-from-revolution-silicon-valley-bank-share-why-theyre-bullish-on-chicago/" %></h4>
+      <p>July 01, 2015</p>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p>&copy; 2015 Company, Inc.</p>
+	</footer>
+
+</div> <!-- /container -->
+
 
       <footer class="footer">
         <p>&copy; Coders of Color 2015</p>
