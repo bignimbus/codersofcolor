@@ -18,3 +18,8 @@
 
 # Ignore Mac DS_Store Files
 .DS_Store
+
+
+# Ignore user files
+
+/public/system/users/avatars/*
