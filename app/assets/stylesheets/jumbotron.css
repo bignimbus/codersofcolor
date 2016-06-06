@@ -1,6 +1,5 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -43,6 +42,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  margin-top: 20px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
