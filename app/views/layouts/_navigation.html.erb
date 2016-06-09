@@ -1,5 +1,6 @@
 <%# navigation styled for Bootstrap 4.0 %>
-<nav class="navbar navbar-light bg-faded">
+<%= stylesheet_link_tag "navigation" %>
+<nav class="navbar navbar-light bg-faded main-nav">
   <%= link_to "Coders of Color", root_path ,  class: "navbar-brand" %>
   <ul class="nav navbar-nav pull-right">
     <%= render 'layouts/navigation_links' %>
