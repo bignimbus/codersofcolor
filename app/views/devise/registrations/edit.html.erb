@@ -17,7 +17,7 @@
         <%= f.input :first_name %>
         <%= f.input :last_name %>
         <%= f.input :bio, placeholder: 'Tell us about yourself!' ,as: :text %>
-        <%= f.input :field, as: :radio_buttons, collection: ["Software Engineer","Data Scientist","Sales","Recruitment","Marketing","DevOps","Product"] %>
+        <%= f.input :field, as: :select, collection: ["Software Engineer","Data Scientist","Sales","Recruitment","Marketing","DevOps","Product"] %>
         <%= f.input :website, placeholder: 'http://www.example.com'  %>
         <%= f.input :twitter, placeholder: 'http://www.twitter.com/kanye'  %>
         <%= f.input :email %>
