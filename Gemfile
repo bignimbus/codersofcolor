@@ -16,6 +16,8 @@ gem 'gibbon'
 gem "paperclip", "~> 4.2"
 gem 'rmagick'
 gem 'attachment_on_the_fly'
+gem 'high_voltage', '~> 3.0.0'
+
 
 group :development, :test do
   gem 'byebug'
