@@ -29,8 +29,9 @@ a {
 .main {
   height: 550px;
   padding-top: 55px;
-  background: url(team_image.jpg);
+  background: url('team_image.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main p {
