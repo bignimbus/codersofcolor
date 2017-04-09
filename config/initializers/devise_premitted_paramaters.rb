@@ -9,10 +9,10 @@ module DevisePermittedParameters
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up) do |user|
-      user.permit(:email,:password,:password_confirmation,:first_name,:last_name, :role,:avatar)
+      user.permit(:email,:password,:password_confirmation,:first_name,:last_name, :role)
     end
     devise_parameter_sanitizer.permit(:account_update) do |user|
-      user.permit(:first_name,:last_name,:bio,:website,:field,:role,:avatar,:twitter)
+      user.permit(:email,:password,:password_confirmation,:first_name,:last_name,:bio,:website,:field,:role,:avatar,:twitter)
     end
   end
 
