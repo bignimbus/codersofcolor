@@ -8,8 +8,12 @@ module DevisePermittedParameters
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :first_name << :last_name << :role << :avatar
-    devise_parameter_sanitizer.for(:account_update) << :first_name << :last_name << :bio << :website << :field << :role << :avatar << :twitter
+    devise_parameter_sanitizer.permit(:sign_up) do |user|
+      user.permit(:email,:password,:password_confirmation,:first_name,:last_name, :role,:avatar)
+    end
+    devise_parameter_sanitizer.permit(:account_update) do |user|
+      user.permit(:first_name,:last_name,:bio,:website,:field,:role,:avatar,:twitter)
+    end
   end
 
 end
