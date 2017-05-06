@@ -17,6 +17,7 @@ gem "paperclip", "~> 5.1.0"
 gem 'rmagick'
 gem 'attachment_on_the_fly'
 gem 'high_voltage', '~> 3.0.0'
+gem 'font-awesome-rails'
 
 
 group :development, :test do
