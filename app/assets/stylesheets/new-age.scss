@@ -28,11 +28,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #fdcc52;
+  color: #000;
 }
 a:hover,
 a:focus {
-  color: #fcbd20;
+  color: #337ab7;
 }
 hr {
   max-width: 100px;
@@ -276,13 +276,12 @@ section.features .device-container {
 }
 section.features .feature-item {
   text-align: center;
-  margin-bottom: 100px;
 }
 section.features .feature-item h3 {
   font-size: 30px;
 }
 section.features .feature-item i {
-  font-size: 80px;
+  font-size: 60px;
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
