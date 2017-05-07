@@ -1,7 +1,13 @@
-<%# navigation styled for Bootstrap 4.0 %>
-<%= stylesheet_link_tag "navigation" %>
-<nav class="navbar navbar-light bg-faded main-nav">
-  <%= link_to "Coders of Color", root_path ,  class: "navbar-brand" %>
-  <ul class="nav navbar-nav pull-right">
-    <%= render 'layouts/navigation_links' %>
+<nav>
+  <div clas="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+      <%= render 'layouts/navigation_links' %>
+     </ul>
+   </div>
 </nav>
