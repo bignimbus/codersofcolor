@@ -124,12 +124,12 @@
         <div class="container">
             <h2>Subscribe We <i class="fa fa-heart"></i> New Friends!</h2>
             <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-4 col-md-offset-4">
               <!-- Begin MailChimp Signup Form -->
               <%= simple_form_for @visitor do |f| %>
                 <%= f.error_notification %>
                 <%= f.input :email, label: false, :placeholder => 'Your email address'%>
-                <%= f.button :submit, "Sign up", :class => "btn btn-success btn-lg signup-button" %>
+                <%= f.button :submit, "Sign Up", :class => "btn btn-success btn-lg signup-button" %>
               <% end %>
             </div>
           </div>
