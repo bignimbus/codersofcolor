@@ -215,17 +215,16 @@ header .device-container .screen img {
 }
 @media (min-width: 992px) {
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 section {
   padding: 100px 0;
 }
 section h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 section.download {
-  padding: 150px 0;
   position: relative;
 }
 section.download h2 {
@@ -250,7 +249,7 @@ section.download .badges .badge-link img {
 }
 @media (min-width: 768px) {
   section.download h2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 section.features .section-heading {
@@ -295,6 +294,7 @@ section.features .feature-item i {
     max-width: none;
   }
 }
+
 section.cta {
   position: relative;
   -webkit-background-size: cover;
@@ -447,4 +447,7 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.signup-button {
+    margin-bottom: 35px;
 }
