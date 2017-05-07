@@ -190,7 +190,7 @@ header .device-container .screen img {
 }
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
+    min-height: 60%;
   }
   header .header-content {
     text-align: left;
@@ -201,7 +201,7 @@ header .device-container .screen img {
     max-width: none;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
   }
   header .header-content .header-content-inner h1 {
@@ -219,7 +219,7 @@ header .device-container .screen img {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 section h2 {
   font-size: 40px;
@@ -303,7 +303,7 @@ section.cta {
   -o-background-size: cover;
   background-position: center;
   background-image: asset-url('woctech.jpg');
-  padding: 250px 0;
+  padding: 175px 0;
 }
 section.cta .cta-content {
   position: relative;
@@ -344,9 +344,9 @@ section.contact ul.list-social {
 }
 section.contact ul.list-social li a {
   display: block;
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
+  height: 60px;
+  width: 60px;
+  line-height: 70px;
   font-size: 40px;
   border-radius: 100%;
   color: white;
@@ -450,4 +450,7 @@ body {
 }
 .signup-button {
     margin-bottom: 35px;
+}
+.mainContent {
+  height: 40px;
 }
