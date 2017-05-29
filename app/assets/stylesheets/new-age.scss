@@ -150,6 +150,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
+  max-height: 500px;
   overflow-y: hidden;
   background: asset-url("bg-pattern.png"), #7b4397;
   /* fallback for old browsers */
