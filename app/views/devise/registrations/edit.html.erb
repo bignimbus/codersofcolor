@@ -16,7 +16,7 @@
         <%= f.input :avatar, placeholder: 'Upload Picture', as: :file %>
         <%= f.input :first_name %>
         <%= f.input :last_name %>
-        <%= f.input :bio, placeholder: 'Tell us about yourself!' ,as: :text %>
+        <%= f.input :bio, placeholder: 'Tell us about yourself!' ,as: :text, input_html: { maxlength: 140 } %>
         <%= f.input :field, as: :select, collection: ["Software Engineer","Data Scientist","Sales","Recruitment","Marketing","DevOps","Product"] %>
         <%= f.input :website, placeholder: 'http://www.example.com'  %>
         <%= f.input :twitter, placeholder: 'http://www.twitter.com/kanye'  %>
