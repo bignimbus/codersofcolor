@@ -2,7 +2,6 @@ class UsersController < ApplicationController
  before_filter  :authenticate_user!
 
   def index
-    @redirect_path = false
     @users = User.all
   end
 
