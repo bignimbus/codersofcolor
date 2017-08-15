@@ -10,7 +10,7 @@ This is a Member Directory powered by Ruby on Rails.
 ![Edit Profile](/public/images/edit_profile.png)
 
 ## Demo
-You can test a fully working live demo at https://codersofcolor.co
+You can test a fully working live demo at https://codersofcolor.herokuapp.com
 
 ## Features
 - Sleek Design
